@@ -1,0 +1,50 @@
+// Floats
+.push-right { float: right; }
+.push-left { float: left; }
+
+// Alignment
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.text-nowrap { white-space: nowrap; }
+
+// Transformation
+.text-lowercase { text-transform: lowercase; }
+.text-uppercase { text-transform: uppercase; }
+.text-capitalize { text-transform: capitalize; }
+
+.show-mobile {
+  @include min-screen(320px) { display: block; }
+  @include min-screen(768px) { display: none; }
+}
+
+.hide-mobile {
+  @include min-screen(320px) { display: none; }
+  @include min-screen(768px) { display: block;}
+}
+
+
+
+
+.is-scrollable {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; overflow: auto;
+
+  &::-webkit-scrollbar { display: none; }
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.is-sticky {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}

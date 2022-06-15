@@ -1,0 +1,46 @@
+{
+  "name": "georgeb-games",
+  "version": "1.0.0",
+  "description": "Games List Task",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "gulp-watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulpjs/gulp.git"
+  },
+  "author": "George Barbu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulpjs/gulp/issues"
+  },
+  "homepage": "https://github.com/gulpjs/gulp#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.13",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-async-to-promises": "^0.8.15",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-cssnano": "^1.1.0",
+    "gulp-ignore": "^3.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "http-proxy": "^1.18.1"
+  },
+  "dependencies": {
+    "u": "^0.1.0"
+  }
+}

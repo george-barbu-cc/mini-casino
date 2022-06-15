@@ -1,0 +1,85 @@
+.account-history {
+    position: fixed;
+    bottom: 0;
+    background: $gray;
+    padding: 0 10px;
+    width: 100%;
+
+    h2 {
+        margin: 0 -10px;
+        background: $gray;
+        font-size: 20px;
+    }
+
+    button {
+        &.collapsible {
+            background: none;
+            border: none;
+            color: $red;
+            font-size: 40px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+
+            &:before {
+                font-family: icomoon;
+                content: "\e961";
+            }
+
+            &.active {
+                &:before {
+                    font-family: icomoon;
+                    content: "\e962";
+                }
+            }
+    
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.7);
+            }
+        }
+    }
+
+    .content-history {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    ul {
+        list-style-type:none;
+        white-space:nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            height: 7px;
+        }
+        &::-webkit-scrollbar-thumb:horizontal:hover {
+            background-color: black;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            max-width: 100px;
+            a {
+                img {
+                    @include max-screen($container-custom) { 
+                        display: block!important;
+                    }
+                }
+                button {
+                    bottom: 25px!important;
+                    @include max-screen($container-custom) { 
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+

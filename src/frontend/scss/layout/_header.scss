@@ -1,0 +1,49 @@
+.header-bar {
+    background-color: $red;
+    text-align: center;
+    padding: 10px;
+
+    .inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include max-screen($container-md) {
+            flex-direction: column;
+        }
+
+        picture {
+            img {
+                height: 72px;
+            }
+        }
+
+        .user-area {
+            position: absolute;
+            right: 45px;
+            @include max-screen($container-md) {
+                position: relative;
+                right: 0;
+                width: 100%;
+                margin-top: 15px;
+            }
+            &-logged {
+                display:none;
+            }
+            .error-login {
+                display: none;
+                width: 100%;
+                color: $white;
+                float: left;
+                position: absolute;
+                top: -15px;
+                padding: 3px;
+                left: 0;
+                text-align: left;
+                border: 1px solid $white;
+            }
+        }
+
+    }
+
+}
+

@@ -1,0 +1,55 @@
+
+button {
+    &.action {
+        text-align: center;
+        text-decoration: none;
+        padding: 3px 15px;
+        display: inline-block;
+        max-width: 100%;
+        margin: 0 auto 5px;
+        font-size: 18px;
+        border: none;
+        background-color: #ffa100;
+        color: $gray;
+        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        cursor: pointer;
+        border-radius: 0;
+
+        &:focus {
+            outline:none;
+        } 
+
+        &:hover {
+            background-color: #ffba00;
+            border: none;
+        } 
+        &:activ {
+            background-color: #ffba00;
+            border: none;
+        } 
+    } 
+
+    &.submit { 
+        background-color: #ffa100;
+        border:2px solid #ffa100;
+        margin: 5px;
+        padding: 5px 10px;
+        color: $gray;
+        cursor: pointer;
+        &:hover {
+            background-color: #ffba00;
+        } 
+    }
+
+    &.login {
+        min-width: 64px;
+        width: auto;
+        background: 0 0;
+        color: $white;
+        border: 1px solid $white;
+        padding: 5px;
+        cursor: pointer;
+       
+    }
+}
+

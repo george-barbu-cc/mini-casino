@@ -1,0 +1,91 @@
+//  **
+//  * Colors used across the website
+//  **
+
+$black:                 #000 !default;
+$white:                 lighten($black, 100%) !default;
+$green:                #4eab38;
+$red:                  #ff141a;
+$gray:                 #333;
+$darkgrey:             #292929;
+
+// Links
+$link-color:            $white !default;
+$active-color:          lighten($black, 90%) !default;
+
+
+//
+// * Paths to assets used across the website
+//
+
+$images-path:           '../../img' !default;
+$fonts-path:            '../../fonts' !default;
+$css-path:              '../../css' !default;
+
+
+//
+//  * Typography
+//
+
+// Fonts
+$font-family-base:                'texta-book', -apple-system, system-ui, BlinkMacSystemFont, sans-serif !default;
+
+
+// Base
+$font-size-base:                  14px !default;
+$line-height-base:                1.5 !default;
+$text-color:                      $white;  
+$link-color-hover:                $white;  
+
+// rem unit
+$rem-baseline:                    $font-size-base - 4 !default; // ~10px = 1rem
+$rem-fallback:                    false !default;
+$rem-px-only:                     false !default;
+
+$font-size-h1:                    floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:                    floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:                    ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:                    ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:                    $font-size-base !default;
+$font-size-h6:                    ceil(($font-size-base * .85)) !default; // ~12px
+
+$headings-margin-bottom:          5px !default;
+$headings-line-height:            1.1 !default;
+$headings-font-weight:            bold !default;
+
+
+//
+// * Containers
+//
+
+$container-xss:         375px !default;
+$container-xs:          480px !default;
+$container-sm:          568px !default;
+$container-md:          767px !default;
+$container-lg:          970px !default;
+$container-xl:          1170px !default;
+$container-xxl:         1210px !default;
+$container-xxxl:        1450px !default;
+$container-custom:      900px !default;
+$container-ipad:        1024px !default;
+
+
+
+//
+//  * Buttons
+//
+
+$btn-padding-x:         10px !default;
+$btn-padding-y:         10px !default;
+$btn-line-height:       1.25 !default;
+$btn-font-weight:       normal !default;
+
+
+
+
+$gb-flex-grid-columns:           1 2 3 4 5 6 7 8;
+$gb-flex-grid-breakpoints:       400px 540px 720px 1310px 1400px 1400px 1400px;
+
+$gb-flex-grid-columns-4:         1 2 3 4;
+$gb-flex-grid-breakpoints-4:     400px 480px 720px;
+

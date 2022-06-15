@@ -1,0 +1,90 @@
+.modal {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  .modal-dialog { 
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    @media(max-width: 768px) {
+      min-height: calc(100vh - 20px);
+    }
+
+    .modal-header {
+      background-color: $red;
+      color: $white;
+      align-items: center;
+    }
+
+    .modal-title {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      line-height: 1;
+    }
+
+    .modal-footer { 
+        align-items: center;
+        justify-content: center;
+    }
+
+    button {
+      &.close {
+          color: $white;
+          background-color: $red;
+          border: 1px solid $white;
+          padding: 5px 10px;
+          margin: 0;
+          &:hover {
+            color: $white;
+          }
+          &:focus {
+            text-shadow: none;
+            outline: none;
+          }
+      }
+    }
+  }
+
+  &.modal-login {
+    .modal-header {
+        background-color: $red;
+        color: $white;
+        align-items: center;
+    }
+
+    .error-login {
+        display: none;
+        width: 100%;
+        color: $gray;
+        float: left;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        text-align: center;
+        color: red;
+        @include max-screen($container-xss) {
+          left: -40px;
+        }
+    }
+
+    .btn-danger {
+        display: none;
+    }
+  }
+
+  &.modal-game { 
+    .modal-header {
+      h4 {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+
+}
+
+
